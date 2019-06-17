@@ -1,4 +1,4 @@
-FROM ruby:2.6
+FROM ruby:2.6.3
 
 ENV APPDIR /usr/local/myapp
 
