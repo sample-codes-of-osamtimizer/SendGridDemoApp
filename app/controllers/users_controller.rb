@@ -9,9 +9,13 @@ class UsersController < ApplicationController
     end
   end
 
+  def new
+    @user = User.new
+  end
+
   private
     def user_params
-      params(:users).require(:name, :email)
+      params.require(:user).permit(:name, :email)
     end
 
 end
